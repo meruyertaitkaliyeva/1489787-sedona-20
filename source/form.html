@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
 
@@ -16,21 +17,21 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="photo.html">Фото и отзывы</a>
+            <a class="main-nav__link" href="photo.html">Фото и отзывы</a>
           </li>
           <li class="main-nav__item main-nav__item--active">
-            <a>Форма отзыва</a>
+            <a class="main-nav__link">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">HTML Academy</a>
+            <a class="main-nav__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="page-main page-main--form">
       <header class="main-header">
         <h1 class="main-header__title">Оставьте свой отзыв</h1>
         <p class="main-header__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -74,9 +75,9 @@
         </fieldset>
         <fieldset class="page-form__fieldset fieldset">
           <legend class="fieldset__name">Опишите свои эмоции:</legend>
-          <textarea class="fieldset__message" name="message" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
+          <textarea class="fieldset__input fieldset__input--message" name="message" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
         </fieldset>
-        <button class="button page-form__submit" type="submit"></button>
+        <button class="button page-form__submit" type="submit">Отправить отзыв</button>
       </form>
     </main>
     <footer class="page-footer">

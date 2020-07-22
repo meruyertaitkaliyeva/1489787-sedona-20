@@ -1,0 +1,28 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__link {
+  font-weight: 700;
+  line-height: 40px;
+  text-decoration: none;
+  color: $basic-white;
+  background-color: $basic-light-blue;
+
+  &:hover,
+  &:focus {
+    background-color: $basic-blue;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3%);
+    background-color: $basic-dark-blue;
+  }
+}
