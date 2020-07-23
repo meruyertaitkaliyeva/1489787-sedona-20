@@ -1,6 +1,8 @@
-@import "variables.scss";
 @import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
 
+@import "normalize.scss";
 @import "blocks/globals.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/button.scss";
