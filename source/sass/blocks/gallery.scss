@@ -3,5 +3,5 @@
 }
 
 .gallery__list {
-  list-style: none;
+  @include list-style;
 }

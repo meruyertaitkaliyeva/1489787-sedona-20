@@ -1,24 +1,18 @@
 @import "variables.scss";
-@import "font-face.scss";
+@import "fonts.scss";
 
+@import "blocks/globals.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/button.scss";
 
-@import "blocks/page.scss";
-@import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/main-header.scss";
-@import "blocks/page-main.scss";
 @import "blocks/advantages.scss";
 @import "blocks/benefits.scss";
 @import "blocks/hotel-reservation.scss";
-@import "blocks/map.scss";
-@import "blocks/page-form.scss";
 @import "blocks/fieldset";
 @import "blocks/gallery.scss";
 @import "blocks/card.scss";
-@import "blocks/video.scss";
-@import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 

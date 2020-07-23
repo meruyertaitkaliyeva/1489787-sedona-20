@@ -1,7 +1,5 @@
 .main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-style;
 }
 
 .main-nav__item {
@@ -10,11 +8,10 @@
 }
 
 .main-nav__link {
+  @include blue-white-mix;
   font-weight: 700;
   line-height: 40px;
   text-decoration: none;
-  color: $basic-white;
-  background-color: $basic-light-blue;
 
   &:hover,
   &:focus {

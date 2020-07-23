@@ -1,12 +1,11 @@
 .social__title {
-  font-size: 21px;
-  font-weight: 700;
+  @include bold-font-style;
   text-decoration: none;
   color: $basic-black;
 }
 
 .social__list {
-  list-style: none;
+  @include list-style;
 }
 
 .social__item {

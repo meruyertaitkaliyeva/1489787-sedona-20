@@ -8,3 +8,8 @@
   color: $basic-white;
   background-color: $basic-light-blue;
 }
+
+@mixin bold-font-style {
+  font-size: 21px;
+  font-weight: 700;
+}
