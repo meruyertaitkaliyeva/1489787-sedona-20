@@ -1,0 +1,15 @@
+.social__title {
+  @include bold-font-style;
+  text-decoration: none;
+  color: $basic-black;
+}
+
+.social__list {
+  @include list-style;
+}
+
+.social__item {
+  width: 46px;
+  height: 48px;
+  background-color: $basic-light-blue;
+}

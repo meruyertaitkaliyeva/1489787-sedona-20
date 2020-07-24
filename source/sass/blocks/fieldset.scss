@@ -1,0 +1,19 @@
+.fieldset {
+  border: none;
+}
+
+.fieldset__name {
+  font-weight: 700;
+}
+
+.fieldset__label {
+  font-size: 14px;
+  color: $basic-dark;
+}
+
+.fieldset__input {
+  font-weight: 700;
+  text-transform: none;
+  color: $basic-black;
+  background-color: $basic-light;
+}

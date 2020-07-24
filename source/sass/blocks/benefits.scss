@@ -1,0 +1,18 @@
+.benefits {
+  @include list-style;
+  color: $basic-black;
+  background-color: $basic-white;
+}
+
+.benefits__item {
+  margin: 0;
+}
+
+.benefits__title {
+  margin: 0;
+  font-weight: 700;
+}
+
+.benefits__description {
+  margin: 0;
+}

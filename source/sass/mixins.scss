@@ -1,0 +1,15 @@
+@mixin list-style {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin blue-white-mix {
+  color: $basic-white;
+  background-color: $basic-light-blue;
+}
+
+@mixin bold-font-style {
+  font-size: 21px;
+  font-weight: 700;
+}

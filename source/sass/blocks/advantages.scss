@@ -1,0 +1,15 @@
+.advantages__list {
+  @include list-style;
+}
+
+.advantages__item {
+  margin: 0;
+  background-color: #eeeeee;
+  &--disclosed {
+    @include blue-white-mix;
+  }
+}
+
+.advantages__title {
+  font-weight: 700;
+}
