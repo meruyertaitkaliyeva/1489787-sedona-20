@@ -1,0 +1,21 @@
+.page-footer {
+  margin: 0 auto;
+  padding-top: 38px;
+  padding-bottom: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    display: flex;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+}
