@@ -1,5 +1,6 @@
 .fieldset {
   border: none;
+  padding-top: 20px;
 }
 
 .fieldset__name {
@@ -9,11 +10,52 @@
 .fieldset__label {
   font-size: 14px;
   color: $basic-dark;
+
+  &--radio {
+    display: block;
+    position: relative;
+    padding-left: 74px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 48px;
+      background-color: $basic-light;
+      border-radius: 50%;
+    }
+  }
+
+  &--checkbox {
+    position: relative;
+    padding-left: 75px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      transform: translateY(-50%);
+      width: 46px;
+      height: 46px;
+      background-color: $basic-light;
+    }
+  }
 }
 
 .fieldset__input {
+  width: 230px;
+  height: 58px;
   font-weight: 700;
   text-transform: none;
-  color: $basic-black;
   background-color: $basic-light;
+
+  &::placeholder {
+    color: $basic-black;
+  }
+
 }
+

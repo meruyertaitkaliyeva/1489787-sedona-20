@@ -5,3 +5,19 @@
 .gallery__list {
   @include list-style;
 }
+
+ @media (min-width: $tablet-width) {
+   .gallery__list {
+     display: grid;
+     grid-template-columns: 1fr min-content min-content min-content;
+     flex-wrap: wrap;
+   }
+ }
+
+ @media (min-width: $desktop-width) {
+  .gallery__list {
+    display: grid;
+    grid-template-columns: 1fr min-content min-content min-content;
+    flex-wrap: wrap;
+  }
+}

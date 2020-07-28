@@ -24,3 +24,21 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: $mobile-width-container;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    max-width: $tablet-width-container;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: $desktop-width-container;
+  }
+}
+

@@ -32,9 +32,8 @@
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    top: 0;
-    margin: 16px 11px 14px 34px;
+    margin-top: 16px;
+    margin-bottom: 34px;
   }
   .main-nav__link {
     color: $basic-black;
@@ -90,9 +89,8 @@
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    top: 0;
-    margin: 16px 55px 14px 76px;
+    margin-top: 16px;
+    margin-bottom: 34px;
   }
   .main-nav__link {
     color: $basic-black;

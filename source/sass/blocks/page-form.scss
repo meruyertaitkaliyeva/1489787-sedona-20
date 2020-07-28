@@ -1,0 +1,39 @@
+.page-form__fieldset {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 1px;
+    background-color: $basic-light-grey;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-form__fieldset {
+    position: unset;
+
+    &--impression {
+      order: -1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-form {
+    display: grid;
+    flex-wrap: wrap;
+  }
+
+  .page-form__fieldset {
+    position: unset;
+  }
+}
