@@ -20,6 +20,12 @@
     justify-content: space-between;
     background-color: $basic-light;
   }
+
+  .card__pic {
+    &--main {
+      width: 100%;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -29,5 +35,11 @@
     left: 0;
     justify-content: space-between;
     background-color: transparent;
+  }
+
+  .card__pic {
+    &--main {
+      width: 100%;
+    }
   }
 }

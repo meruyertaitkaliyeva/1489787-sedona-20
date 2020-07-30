@@ -12,6 +12,7 @@
 .social__list {
   @include list-style;
   display: flex;
+  justify-content: center;
 }
 
 .social__item {

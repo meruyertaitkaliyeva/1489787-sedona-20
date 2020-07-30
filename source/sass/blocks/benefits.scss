@@ -22,7 +22,7 @@
     &::before {
       width: 39px;
       height: 37px;
-      background-image: url("../../img/icon-house.svg");
+      background-image: url("../img/icon-house.svg");
     }
   }
 
@@ -31,7 +31,7 @@
     &::before {
       width: 32px;
       height: 38px;
-      background-image: url("../../img/icon-gift.svg");
+      background-image: url("../img/icon-gift.svg");
     }
   }
 
@@ -40,7 +40,7 @@
     &::before {
       width: 40px;
       height: 35px;
-      background-image: url("../../img/icon-burger.svg");
+      background-image: url("../img/icon-burger.svg");
     }
   }
 }
@@ -56,11 +56,9 @@
 
 @media (min-width: $tablet-width) {
   .benefits {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0;
+    display: grid;
+    grid-template-columns: 256px 256px 256px;
+    background-color: $basic-white;
   }
 
   .benefits__item {
@@ -78,38 +76,41 @@
     }
 
     &--house {
+      justify-self: flex-start;
       width: 185px;
       margin-left: 37px;
-      padding-top: 98px;
+      padding-top: 95px;
 
       &::before {
         width: 75px;
         height: 72px;
-        background-image: url("../../img/icon-house.svg");
+        background-image: url("../img/icon-house.svg");
       }
     }
 
     &--souvenirs {
+      justify-self: flex-end;
       width: 180px;
       margin-right: 31px;
-      padding-top: 112px;
+      padding-top: 95px;
       order: 2;
 
       &::before {
         width: 76px;
         height: 68px;
-        background-image: url("../../img/icon-gift.svg");
+        background-image: url("../img/icon-gift.svg");
       }
     }
 
     &--food {
+      justify-self: center;
       width: 193px;
       padding-top: 95px;
 
       &::before {
         width: 64px;
         height: 75px;
-        background-image: url("../../img/icon-burger.svg");
+        background-image: url("../img/icon-burger.svg");
       }
     }
   }
@@ -117,11 +118,9 @@
 
 @media (min-width: $desktop-width) {
   .benefits {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    background-color: $basic-white;
   }
 
   .benefits__item {
@@ -139,38 +138,41 @@
     }
 
     &--house {
+      justify-self: flex-start;
       width: 282px;
       margin-left: 58px;
-      padding-top: 98px;
+      padding-top: 95px;
 
       &::before {
         width: 75px;
         height: 72px;
-        background-image: url("../../img/icon-house.svg");
+        background-image: url("../img/icon-house.svg");
       }
     }
 
     &--souvenirs {
+      justify-self: flex-end;
       width: 244px;
       margin-right: 78px;
-      padding-top: 112px;
+      padding-top: 95px;
       order: 2;
 
       &::before {
         width: 76px;
         height: 68px;
-        background-image: url("../../img/icon-gift.svg");
+        background-image: url("../img/icon-gift.svg");
       }
     }
 
     &--food {
+      justify-self: center;
       width: 313px;
       padding-top: 95px;
 
       &::before {
         width: 64px;
         height: 75px;
-        background-image: url("../../img/icon-burger.svg");
+        background-image: url("../img/icon-burger.svg");
       }
     }
   }
