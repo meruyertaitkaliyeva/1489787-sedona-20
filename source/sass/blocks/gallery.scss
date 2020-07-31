@@ -5,3 +5,31 @@
 .gallery__list {
   @include list-style;
 }
+
+@media (min-width: $tablet-width) {
+  .gallery__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery__item {
+    &--main {
+      grid-column: 1 / -1;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .gallery__item {
+    &--main {
+      grid-column: 1 / -1;
+      width: 100%;
+    }
+  }
+}

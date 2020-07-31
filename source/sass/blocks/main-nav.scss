@@ -19,7 +19,121 @@
   }
 
   &:active {
-    color: rgba($basic-white, 0.3%);
+    color: rgba(#ffffff, 0.3%);
     background-color: $basic-dark-blue;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    margin-bottom: 34px;
+  }
+  .main-nav__link {
+    color: $basic-black;
+    background-color: $basic-white;
+    padding: 5px 10px;
+
+    &:hover,
+    &:focus {
+      color: $basic-light-blue;
+      background-color: $basic-white;
+    }
+
+    &:active {
+      color: rgba(#000000, 0.3%);
+      background-color: $basic-white;
+    }
+
+    &--active {
+      color: $special-grey;
+      background-color: $basic-white;
+
+      &:hover,
+      &:focus {
+        color: $special-dark-grey;
+        background-color: $basic-white;
+      }
+
+      &:active {
+        color: rgba(#766357, 0.3%);
+        background-color: $basic-white;
+      }
+    }
+  }
+
+  .main-nav__item:first-of-type {
+    margin-right: 47px;
+  }
+
+  .main-nav__item:nth-of-type(2) {
+    margin-right: 179px;
+  }
+
+  .main-nav__item:nth-of-type(3) {
+    margin-right: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    margin-bottom: 34px;
+  }
+  .main-nav__link {
+    color: $basic-black;
+    background-color: $basic-white;
+    padding: 5px 10px;
+
+    &:hover,
+    &:focus {
+      color: $basic-light-blue;
+      background-color: $basic-white;
+    }
+
+    &:active {
+      color: rgba(#000000, 0.3%);
+      background-color: $basic-white;
+    }
+
+    &--active {
+      color: $special-grey;
+      background-color: $basic-white;
+
+      &:hover,
+      &:focus {
+        color: $special-dark-grey;
+        background-color: $basic-white;
+      }
+
+      &:active {
+        color: rgba(#766357, 0.3%);
+        background-color: $basic-white;
+      }
+    }
+  }
+
+  .main-nav__item:first-of-type {
+    margin-right: 132px;
+  }
+
+  .main-nav__item:nth-of-type(2) {
+    margin-right: 352px;
+  }
+
+  .main-nav__item:nth-of-type(3) {
+    margin-right: 107px;
   }
 }

@@ -1,3 +1,57 @@
+.hotel-reservation {
+  padding-top: 33px;
+  padding-bottom: 49px;
+}
+
 .hotel-reservation__title {
   @include bold-font-style;
+  margin: 0;
+}
+
+.hotel-reservation__text {
+  margin-bottom: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .hotel-reservation {
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+
+  .hotel-reservation__title {
+    @include bold-font-style;
+    margin: 0;
+  }
+
+  .hotel-reservation__text {
+    width: 435px;
+    margin: 0 auto;
+    margin-bottom: 37px;
+  }
+
+  .hotel-reservation__button {
+    padding: 15px 121px 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hotel-reservation {
+    padding-top: 58px;
+    padding-bottom: 66px;
+  }
+
+  .hotel-reservation__title {
+    @include bold-font-style;
+    margin: 0;
+  }
+
+  .hotel-reservation__text {
+    width: 435px;
+    margin: 0 auto;
+    margin-bottom: 42px;
+  }
+
+  .hotel-reservation__button {
+    padding: 15px 121px 17px;
+  }
 }
