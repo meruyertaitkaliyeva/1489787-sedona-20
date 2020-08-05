@@ -1,5 +1,16 @@
 .copyright {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 14px;
+}
+
+.copyright__logo {
+  width: 27px;
+  height: 34px;
+  margin-top: 7px;
+}
+
+.copyright__logo path {
+  fill: #000000;
 }

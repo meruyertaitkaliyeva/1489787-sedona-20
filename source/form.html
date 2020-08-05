@@ -42,24 +42,29 @@
           <p class="main-header__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
         <form class="page-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="page-form__fieldset page-form__fieldset--introduction fieldset">
-            <legend class="fieldset__name">Представьтесь:</legend>
-            <label class="fieldset__label" for="firstname">Имя<span class="fieldset__label-star">*</span>:</label>
-            <input class="fieldset__input fieldset__input--firstname" type="text" id="firstname" placeholder="Петр">
-            <label class="fieldset__label" for="lastname">Фамилия<span class="fieldset__label-star">*</span>:</label>
-            <input class="fieldset__input fieldset__input--lastname" type="text" id="lastname" placeholder="Иванов">
-            <label class="fieldset__label" for="patronymic">Отчество:</label>
-            <input class="fieldset__input fieldset__input--patronymic" type="text" id="patronymic" placeholder="Александрович">
+          <fieldset class="page-form__fieldset page-form__fieldset--introduction fieldset fieldset--introduction">
+            <legend class="fieldset__name fieldset__name--introduction">Представьтесь:</legend>
+            <label class="fieldset__label fieldset__label--introduction">Имя<span class="fieldset__label-star">*</span>:
+              <input class="fieldset__input fieldset__input--firstname" type="text" placeholder="Петр">
+            </label>
+            <label class="fieldset__label fieldset__label--introduction">Фамилия<span class="fieldset__label-star">*</span>:
+              <input class="fieldset__input fieldset__input--lastname" type="text" placeholder="Иванов">
+            </label>
+            <label class="fieldset__label fieldset__label--introduction">Отчество:
+              <input class="fieldset__input fieldset__input--patronymic" type="text" placeholder="Александрович">
+            </label>
           </fieldset>
-          <fieldset class="page-form__fieldset page-form__fieldset--contacts fieldset">
-            <legend class="fieldset__name">Контактная информация:</legend>
-            <label class="fieldset__label" for="phone">Контактный телефон<span class="fieldset__label-star">*</span>:</label>
-            <input class="fieldset__input fieldset__input--phone" type="tel" id="phone" placeholder="Введите телефон">
-            <label class="fieldset__label" for="email">Электронная почта<span class="fieldset__label-star">*</span>:</label>
-            <input class="fieldset__input fieldset__input--email" type="email" id="email" placeholder="Введите e-mail">
+          <fieldset class="page-form__fieldset page-form__fieldset--contacts fieldset fieldset--contacts">
+            <legend class="fieldset__name fieldset__name--contacts">Контактная информация:</legend>
+            <label class="fieldset__label fieldset__label--contacts"><span class="fieldset__label-phone">Контактный</span>телефон<span class="fieldset__label-star">*</span>:
+              <input class="fieldset__input fieldset__input--phone" type="tel" placeholder="Введите телефон">
+            </label>
+            <label class="fieldset__label fieldset__label--contacts">Электронная почта<span class="fieldset__label-star">*</span>:
+              <input class="fieldset__input fieldset__input--email" type="email" placeholder="Введите e-mail">
+            </label>
           </fieldset>
-          <fieldset class="page-form__fieldset page-form__fieldset--impression fieldset">
-            <legend class="fieldset__name">Ваше общее впечатление:</legend>
+          <fieldset class="page-form__fieldset page-form__fieldset--impression fieldset fieldset--impression">
+            <legend class="fieldset__name fieldset__name--impression">Ваше общее впечатление:</legend>
             <input class="fieldset__radio visually-hidden" type="radio" name="radio" id="good" checked>
             <label class="fieldset__label fieldset__label--radio" for="good">Скорее положительное</label>
             <input class="fieldset__radio visually-hidden" type="radio" name="radio" id="bad">
@@ -67,8 +72,8 @@
             <input class="fieldset__radio visually-hidden" type="radio" name="radio" id="neutral">
             <label class="fieldset__label fieldset__label--radio" for="neutral">Затрудняюсь ответить</label>
           </fieldset>
-          <fieldset class="page-form__fieldset page-form__fieldset--attractions fieldset">
-            <legend class="fieldset__name">Посещенные достопримечательности:</legend>
+          <fieldset class="page-form__fieldset page-form__fieldset--attractions fieldset fieldset--attractions">
+            <legend class="fieldset__name fieldset__name--attractions">Посещенные достопримечательности:</legend>
             <input class="fieldset__checkbox visually-hidden" type="checkbox" name="bridge" id="bridge" checked>
             <label class="fieldset__label fieldset__label--checkbox" for="bridge">Мост Дьявола</label>
             <input class="fieldset__checkbox visually-hidden" type="checkbox" name="mountain" id="mountain" checked>
@@ -78,8 +83,8 @@
             <input class="fieldset__checkbox visually-hidden" type="checkbox" name="rocks" id="rocks">
             <label class="fieldset__label fieldset__label--checkbox" for="rocks">Красные скалы</label>
           </fieldset>
-          <fieldset class="page-form__fieldset page-form__fieldset--message fieldset">
-            <legend class="fieldset__name">Опишите свои эмоции:</legend>
+          <fieldset class="page-form__fieldset page-form__fieldset--message fieldset fieldset--message">
+            <legend class="fieldset__name fieldset__name--message">Опишите свои эмоции:</legend>
             <textarea class="fieldset__input fieldset__input--message" name="message" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
           </fieldset>
           <button class="button page-form__submit" type="submit">Отправить отзыв</button>
@@ -87,12 +92,18 @@
         </form>
       </main>
       <footer class="page-footer">
+        <p class="page-footer__intro">#VisitSedona</p>
         <div class="page-footer__social social">
-          <a class="social__title" href="#">#VisitSedona</a>
           <ul class="social__list">
-            <li class="social__item social__item--twitter"></li>
-            <li class="social__item social__item--facebook"></li>
-            <li class="social__item social__item--youtube"></li>
+            <li class="social__item social__item--twitter">
+              <a href="#"></a>
+            </li>
+            <li class="social__item social__item--facebook">
+              <a href="#"></a>
+            </li>
+            <li class="social__item social__item--youtube">
+              <a href="#"></a>
+            </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">

@@ -3,6 +3,10 @@
   font-size: 14px;
 }
 
+.card__folder {
+  text-align: left;
+}
+
 .card__caption {
   font-weight: 700;
 }
@@ -16,14 +20,18 @@
 }
 
 @media (min-width: $tablet-width) {
-  .card__description {
+  .card__folder {
+    display: flex;
     justify-content: space-between;
     background-color: $basic-light;
   }
 
   .card__pic {
+    width: 324px;
+    height: 267px;
     &--main {
       width: 100%;
+      height: 400px;
     }
   }
 }

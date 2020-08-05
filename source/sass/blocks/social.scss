@@ -2,13 +2,6 @@
   margin-bottom: 45px;
 }
 
-.social__title {
-  @include bold-font-style;
-  margin-bottom: 33px;
-  text-decoration: none;
-  color: $basic-black;
-}
-
 .social__list {
   @include list-style;
   display: flex;
@@ -70,12 +63,6 @@
   .social {
     display: flex;
     margin: 0;
-    margin-right: 105px;
-  }
-
-  .social__title {
-    margin: 0;
-    margin-right: 97px;
   }
 }
 
@@ -83,11 +70,5 @@
   .social {
     display: flex;
     margin: 0;
-    margin-right: 261px;
-  }
-
-  .social__title {
-    margin: 0;
-    margin-right: 254px;
   }
 }
