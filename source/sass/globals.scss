@@ -30,6 +30,11 @@ input[type="radio"].visually-hidden {
   padding: 0 20px;
 }
 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 @media (min-width: $tablet-width) {
   .container {
     max-width: $tablet-width-container;

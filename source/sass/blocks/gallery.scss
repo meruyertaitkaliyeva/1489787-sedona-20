@@ -6,6 +6,22 @@
   @include list-style;
 }
 
+.gallery__item {
+  position: relative;
+  padding-top: 22px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .gallery__list {
     display: grid;

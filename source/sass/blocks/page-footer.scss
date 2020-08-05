@@ -4,18 +4,23 @@
   padding-bottom: 26px;
 }
 
+.page-footer__intro {
+  @include bold-font-style;
+  margin: 0;
+  margin-bottom: 33px;
+  color: $basic-black;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer {
     display: flex;
-    padding-top: 36px;
-    padding-bottom: 36px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 36px 30px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-footer {
-    display: flex;
-    padding-top: 36px;
-    padding-bottom: 36px;
+  .page-footer__intro {
+    align-self: center;
+    margin: 0;
   }
 }

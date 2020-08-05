@@ -1,25 +1,70 @@
 .fieldset {
+  display: flex;
+  flex-wrap: wrap;
   border: none;
+  padding: 0;
   padding-top: 20px;
+  text-align: left;
+
+  &--introduction {
+    padding-bottom: 25px;
+  }
+
+  &--contacts {
+
+    padding-bottom: 28px;
+  }
+
+  &--impression {
+    padding-bottom: 41px;
+  }
+
+  &--attractions {
+    padding-bottom: 39px;
+  }
+
+  &--message {
+    margin-bottom: 51px;
+  }
 }
 
 .fieldset__name {
+  padding-top: 20px;
   font-weight: 700;
+  text-align: center;
 }
 
 .fieldset__label {
   font-size: 14px;
   color: $basic-dark;
 
-  &--radio {
-    display: block;
+  &--introduction:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+
+  &--contacts:not(:last-of-type) {
+    margin-bottom: 14px;
+  }
+
+  &--radio,
+  &--checkbox {
     position: relative;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: none;
+  }
+
+  &--radio {
     padding-left: 74px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 43px;
+    }
 
     &::before {
       position: absolute;
       content: "";
-      top: 0;
+      top: 50%;
       left: 0;
       transform: translateY(-50%);
       width: 48px;
@@ -30,13 +75,16 @@
   }
 
   &--checkbox {
-    position: relative;
     padding-left: 75px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 54px;
+    }
 
     &::before {
       position: absolute;
       content: "";
-      top: 0;
+      top: 50%;
       left: 0;
       transform: translateY(-50%);
       width: 46px;
@@ -47,13 +95,174 @@
 }
 
 .fieldset__input {
-  width: 230px;
   height: 58px;
+  border: none;
+  padding: 18px 22px 14px;
   font-weight: 700;
   text-transform: none;
   background-color: $basic-light;
+  box-sizing: border-box;
 
   &::placeholder {
     color: $basic-black;
+  }
+
+  &--firstname {
+    width: 230px;
+  }
+
+  &--lastname {
+    width: 192px;
+  }
+
+  &--patronymic {
+    width: 194px;
+  }
+
+  &--phone,
+  &--email {
+    width: 280px;
+  }
+
+  &--message {
+    width: 279px;
+    min-height: 160px;
+    padding: 13px 21px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset {
+    &--attractions {
+      display: inline-block;
+      padding: 0 100px;
+    }
+  }
+
+  .fieldset__name {
+    font-size: 21px;
+
+    &--introduction {
+      margin-bottom: 54px;
+    }
+
+    &--impression {
+      margin-bottom: 72px;
+    }
+
+    &--contacts,
+    &--attractions,
+    &--message {
+      padding-left: 50px;
+      padding-right: 50px;
+      background-color: $basic-white;
+    }
+
+    &--contacts {
+      margin-bottom: 20px;
+    }
+
+    &--attractions {
+      width: 308px;
+      margin-bottom: 58px;
+    }
+
+    &--message {
+      margin-bottom: 54px;
+    }
+  }
+
+  .fieldset__label {
+    &--radio:not(:last-of-type) {
+      margin-bottom: 52px;
+    }
+
+    &--checkbox {
+      display: inline-block;
+      margin-bottom: 62px;
+
+      &:nth-of-type(3) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .fieldset__input {
+    &--firstname {
+      width: 226px;
+    }
+
+    &--lastname {
+      width: 178px;
+    }
+
+    &--patronymic {
+      width: 180px;
+    }
+
+    &--phone,
+    &--email,
+    &--message {
+      width: 648px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset {
+    &--contacts {
+      display: inline-block;
+    }
+
+    &--attractions {
+      margin: auto;
+      padding: 0;
+    }
+  }
+
+  .fieldset__name {
+    &--contacts {
+      margin-bottom: 71px;
+    }
+  }
+
+  .fieldset__label {
+    &--contacts {
+      display: inline-block;
+
+      &:not(:last-of-type) {
+        margin-right: 80px;
+      }
+
+      & .fieldset__label-phone {
+        display: none;
+      }
+    }
+
+    &--checkbox {
+      margin-right: 43px;
+    }
+  }
+  .fieldset__input {
+    &--firstname {
+      width: 350px;
+    }
+
+    &--lastname {
+      width: 312px;
+    }
+
+    &--patronymic {
+      width: 314px;
+    }
+
+    &--phone,
+    &--email {
+      width: 315px;
+    }
+
+    &--message {
+      width: 960px;
+    }
   }
 }
