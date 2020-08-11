@@ -1,5 +1,7 @@
 .benefits {
   @include list-style;
+  padding-top: 25px;
+  padding-bottom: 12px;
   color: $basic-black;
   background-color: $basic-white;
 }
@@ -7,23 +9,22 @@
 .benefits__item {
   margin: 0;
   position: relative;
-  width: 240px;
-  padding-left: 52px;
+  margin-bottom: 25px;
+  padding-left: 65px;
+  padding-right: 35px;
   text-align: left;
 
   &::before {
     position: absolute;
     content: "";
-    top: 0;
-    left: 0;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   &--house {
-    margin-top: 35px;
-    margin-bottom: 26px;
     &::before {
+      top: -10px;
+      left: 17px;
       width: 39px;
       height: 37px;
       background-image: url("../img/icon-house.svg");
@@ -31,8 +32,9 @@
   }
 
   &--souvenirs {
-    margin-bottom: 26px;
     &::before {
+      top: -10px;
+      left: 20px;
       width: 32px;
       height: 38px;
       background-image: url("../img/icon-gift.svg");
@@ -40,8 +42,9 @@
   }
 
   &--food {
-    margin-bottom: 35px;
     &::before {
+      top: -3px;
+      left: 15px;
       width: 40px;
       height: 35px;
       background-image: url("../img/icon-burger.svg");
@@ -51,11 +54,14 @@
 
 .benefits__title {
   margin: 0;
+  margin-bottom: 16px;
   font-weight: 700;
+  font-size: 18px;
 }
 
 .benefits__description {
   margin: 0;
+  line-height: 21px;
 }
 
 @media (min-width: $tablet-width) {
@@ -65,16 +71,17 @@
     align-items: baseline;
     width: 100%;
     min-height: 270px;
-    margin-top: 57px;
-    margin-bottom: 59px;
+    padding-top: 60px;
+    padding-bottom: 35px;
+    box-sizing: border-box;
   }
 
   .benefits__item {
     position: relative;
     width: 100%;
-    padding-top: 95px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
     text-align: center;
     box-sizing: border-box;
 
@@ -114,11 +121,19 @@
       }
     }
   }
+
+  .benefits__title {
+    margin-bottom: 22px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .benefits {
+    padding-bottom: 60px;
+  }
+
   .benefits__item {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }

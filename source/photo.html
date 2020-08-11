@@ -15,7 +15,7 @@
       <a class="page-header__logo" href="index.html">
         <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седоны">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -35,18 +35,19 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main page-main--photo">
-      <header class="main-header">
-        <div class="main-header__logo">
-          <img class="main-header__icon" src="img/text-sedona.svg" width="282" height="214"
+    <main class="page-main">
+      <header class="main-header main-header--photo">
+        <div class="main-header__logo main-header__logo--photo">
+          <img class="main-header__icon main-header__icon--photo" src="img/text-sedona.svg" width="282" height="214"
             alt="Добро пожаловать в Седону">
         </div>
-        <h1 class="visually-hidden">Фото и видео</h1>
+        <div class="main-header__heading main-header__heading--photo">
+          <h1 class="main-header__title main-header__title--photo">Фото и видео</h1>
+          <p class="main-header__intro main-header__intro--photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
+            экономике.</p>
+        </div>
       </header>
       <section class="gallery">
-        <h2 class="gallery__title">Фото и видео</h2>
-        <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
-          экономике.</p>
         <ul class="gallery__list">
           <li class="gallery__item gallery__item--main card">
             <a class="card__link" href="#">
@@ -55,7 +56,7 @@
             </a>
             <div class="card__folder">
               <div class="card__description">
-                <h3 class="card__caption">Народные просторы</h3>
+                <h3 class="card__caption">Неродные просторы</h3>
                 <p class="card__author">Автор фото: Борис</p>
               </div>
               <p class="card__likes">1350</p>
@@ -102,8 +103,10 @@
         </ul>
       </section>
       <section class="video">
-        <h2 class="video__title">Все еще сомневаетесь?</h2>
-        <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <div class="video__heading">
+          <h2 class="video__title">Все еще сомневаетесь?</h2>
+          <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
         <video class="video__clip" src="https://via.placeholder.com/150x150"></video>
       </section>
     </main>
@@ -131,6 +134,7 @@
     </footer>
   </div>
 
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

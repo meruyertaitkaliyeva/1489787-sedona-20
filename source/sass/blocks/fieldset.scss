@@ -2,16 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   border: none;
-  padding: 0;
-  padding-top: 20px;
+  padding: 20px 14px;
   text-align: left;
+  box-sizing: border-box;
 
   &--introduction {
     padding-bottom: 25px;
   }
 
   &--contacts {
-
     padding-bottom: 28px;
   }
 
@@ -24,26 +23,47 @@
   }
 
   &--message {
-    margin-bottom: 51px;
+    margin-bottom: 30px;
   }
 }
 
 .fieldset__name {
   padding-top: 20px;
   font-weight: 700;
+  font-size: 18px;
   text-align: center;
+
+  &--impression {
+    margin-bottom: 18px;
+  }
+
+  &--attraction {
+    padding-top: 15px;
+    margin-bottom: 17px;
+  }
 }
 
 .fieldset__label {
-  font-size: 14px;
+  font-size: 18px;
   color: $basic-dark;
 
-  &--introduction:not(:last-of-type) {
-    margin-bottom: 20px;
+  &--introduction {
+    font-size: 14px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
   }
 
-  &--contacts:not(:last-of-type) {
-    margin-bottom: 14px;
+  &--contacts {
+    font-size: 14px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 13px;
+    }
+    &:first-of-type {
+      margin-top: -3px;
+    }
   }
 
   &--radio,
@@ -55,7 +75,7 @@
   }
 
   &--radio {
-    padding-left: 74px;
+    padding-left: 76px;
 
     &:not(:last-of-type) {
       margin-bottom: 43px;
@@ -65,7 +85,7 @@
       position: absolute;
       content: "";
       top: 50%;
-      left: 0;
+      left: 3px;
       transform: translateY(-50%);
       width: 48px;
       height: 48px;
@@ -75,7 +95,7 @@
   }
 
   &--checkbox {
-    padding-left: 75px;
+    padding-left: 76px;
 
     &:not(:last-of-type) {
       margin-bottom: 54px;
@@ -99,12 +119,19 @@
   border: none;
   padding: 18px 22px 14px;
   font-weight: 700;
+  font-size: 18px;
   text-transform: none;
   background-color: $basic-light;
   box-sizing: border-box;
 
   &::placeholder {
     color: $basic-black;
+  }
+
+  &--firstname,
+  &--lastname,
+  &--patronymic {
+    margin-left: 8px;
   }
 
   &--firstname {
@@ -122,20 +149,42 @@
   &--phone,
   &--email {
     width: 280px;
+    margin-top: 5px;
+  }
+
+  &--phone {
+    margin-top: 10px;
   }
 
   &--message {
     width: 279px;
     min-height: 160px;
+    margin-top: -3px;
     padding: 13px 21px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .fieldset {
+    margin: 0;
+    padding: 0;
+
+    &--introduction {
+      padding-bottom: 55px;
+      text-align: right;
+    }
+
+    &--contacts {
+      padding-bottom: 36px;
+    }
+
     &--attractions {
       display: inline-block;
-      padding: 0 100px;
+      padding: 0 100px 10px;
+    }
+
+    &--message {
+      padding-bottom: 60px;
     }
   }
 
@@ -147,7 +196,7 @@
     }
 
     &--impression {
-      margin-bottom: 72px;
+      margin-bottom: 74px;
     }
 
     &--contacts,
@@ -165,14 +214,20 @@
     &--attractions {
       width: 308px;
       margin-bottom: 58px;
+      padding-top: 16px;
     }
 
     &--message {
-      margin-bottom: 54px;
+      margin-bottom: 60px;
     }
   }
 
   .fieldset__label {
+    &--contacts {
+      &:first-of-type {
+        margin-bottom: 25px;
+      }
+    }
     &--radio:not(:last-of-type) {
       margin-bottom: 52px;
     }
@@ -180,10 +235,6 @@
     &--checkbox {
       display: inline-block;
       margin-bottom: 62px;
-
-      &:nth-of-type(3) {
-        margin-right: 20px;
-      }
     }
   }
 
@@ -210,19 +261,28 @@
 
 @media (min-width: $desktop-width) {
   .fieldset {
+    &--introduction {
+      padding-bottom: 50px;
+    }
+
     &--contacts {
       display: inline-block;
+      padding-bottom: 10px;
     }
 
     &--attractions {
       margin: auto;
-      padding: 0;
+      padding: 0 0 5px;
+    }
+
+    &--message {
+      padding-bottom: 55px;
     }
   }
 
   .fieldset__name {
     &--contacts {
-      margin-bottom: 71px;
+      margin-bottom: 65px;
     }
   }
 

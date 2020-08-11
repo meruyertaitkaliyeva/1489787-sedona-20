@@ -13,7 +13,7 @@
         <a class="page-header__logo" href="index.html">
           <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седоны">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -33,13 +33,15 @@
           </ul>
         </nav>
       </header>
-      <main class="page-main page-main--form">
-        <header class="main-header">
-          <div class="main-header__logo">
-            <img class="main-header__icon" src="img/text-sedona.svg" width="282" height="214" alt="Добро пожаловать в Седону">
+      <main class="page-main">
+        <header class="main-header main-header--form">
+          <div class="main-header__logo main-header__logo--form">
+            <img class="main-header__icon main-header__icon--form" src="img/text-sedona.svg" width="282" height="214" alt="Добро пожаловать в Седону">
           </div>
-          <h1 class="main-header__title">Оставьте свой отзыв</h1>
-          <p class="main-header__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <div class="main-header__heading main-header__heading--form">
+            <h1 class="main-header__title main-header__title--form">Оставьте свой отзыв</h1>
+            <p class="main-header__text main-header__intro--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
         </header>
         <form class="page-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="page-form__fieldset page-form__fieldset--introduction fieldset fieldset--introduction">
@@ -115,5 +117,6 @@
       </footer>
     </div>
 
+    <script src="js/menu.js"></script>
   </body>
 </html>

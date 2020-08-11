@@ -12,28 +12,11 @@
   padding: 0;
 
   font-family: $body-font-family;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
   color: $basic-black;
   background-color: $basic-white;
   overflow-x: auto;
-}
-
-@media (min-width: $tablet-width) {
-  .page__body {
-    &--form,
-    &--photo {
-      padding: 0 40px;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page__body {
-    &--form {
-      padding: 0 100px;
-    }
-  }
 }

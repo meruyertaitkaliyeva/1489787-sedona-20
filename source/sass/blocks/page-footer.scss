@@ -1,6 +1,6 @@
 .page-footer {
   margin: 0 auto;
-  padding-top: 38px;
+  padding-top: 30px;
   padding-bottom: 26px;
 }
 
@@ -16,11 +16,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 36px 30px;
+    padding: 36px 55px;
   }
 
   .page-footer__intro {
     align-self: center;
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding: 36px 120px;
   }
 }
