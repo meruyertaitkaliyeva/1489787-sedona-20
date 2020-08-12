@@ -1,0 +1,27 @@
+.video__heading {
+  width: 266px;
+  margin: 0 auto;
+}
+
+.video__title {
+  @include heading-font-style;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.video__intro {
+  line-height: 23px;
+  margin-bottom: 17px;
+}
+
+@media (min-width: $tablet-width) {
+  .video__heading {
+    width: 445px;
+    margin: 0 auto;
+  }
+
+  .video__title {
+    margin-bottom: 35px;
+    font-size: 30px;
+  }
+}

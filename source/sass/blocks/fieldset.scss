@@ -1,26 +1,91 @@
 .fieldset {
+  display: flex;
+  flex-wrap: wrap;
   border: none;
-  padding-top: 20px;
+  padding: 20px 14px;
+  text-align: left;
+  box-sizing: border-box;
+
+  &--introduction {
+    padding-bottom: 25px;
+  }
+
+  &--contacts {
+    padding-bottom: 28px;
+  }
+
+  &--impression {
+    padding-bottom: 41px;
+  }
+
+  &--attractions {
+    padding-bottom: 39px;
+  }
+
+  &--message {
+    margin-bottom: 30px;
+  }
 }
 
 .fieldset__name {
+  padding-top: 20px;
   font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+
+  &--impression {
+    margin-bottom: 18px;
+  }
+
+  &--attraction {
+    padding-top: 15px;
+    margin-bottom: 17px;
+  }
 }
 
 .fieldset__label {
-  font-size: 14px;
+  font-size: 18px;
   color: $basic-dark;
 
-  &--radio {
-    display: block;
+  &--introduction {
+    font-size: 14px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &--contacts {
+    font-size: 14px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 13px;
+    }
+    &:first-of-type {
+      margin-top: -3px;
+    }
+  }
+
+  &--radio,
+  &--checkbox {
     position: relative;
-    padding-left: 74px;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: none;
+  }
+
+  &--radio {
+    padding-left: 76px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 43px;
+    }
 
     &::before {
       position: absolute;
       content: "";
-      top: 0;
-      left: 0;
+      top: 50%;
+      left: 3px;
       transform: translateY(-50%);
       width: 48px;
       height: 48px;
@@ -30,13 +95,16 @@
   }
 
   &--checkbox {
-    position: relative;
-    padding-left: 75px;
+    padding-left: 76px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 54px;
+    }
 
     &::before {
       position: absolute;
       content: "";
-      top: 0;
+      top: 50%;
       left: 0;
       transform: translateY(-50%);
       width: 46px;
@@ -47,13 +115,214 @@
 }
 
 .fieldset__input {
-  width: 230px;
   height: 58px;
+  border: none;
+  padding: 18px 22px 14px;
   font-weight: 700;
+  font-size: 18px;
   text-transform: none;
   background-color: $basic-light;
+  box-sizing: border-box;
 
   &::placeholder {
     color: $basic-black;
+  }
+
+  &--firstname,
+  &--lastname,
+  &--patronymic {
+    margin-left: 8px;
+  }
+
+  &--firstname {
+    width: 230px;
+  }
+
+  &--lastname {
+    width: 192px;
+  }
+
+  &--patronymic {
+    width: 194px;
+  }
+
+  &--phone,
+  &--email {
+    width: 280px;
+    margin-top: 5px;
+  }
+
+  &--phone {
+    margin-top: 10px;
+  }
+
+  &--message {
+    width: 279px;
+    min-height: 160px;
+    margin-top: -3px;
+    padding: 13px 21px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset {
+    margin: 0;
+    padding: 0;
+
+    &--introduction {
+      padding-bottom: 55px;
+      text-align: right;
+    }
+
+    &--contacts {
+      padding-bottom: 36px;
+    }
+
+    &--attractions {
+      display: inline-block;
+      padding: 0 100px 10px;
+    }
+
+    &--message {
+      padding-bottom: 60px;
+    }
+  }
+
+  .fieldset__name {
+    font-size: 21px;
+
+    &--introduction {
+      margin-bottom: 54px;
+    }
+
+    &--impression {
+      margin-bottom: 74px;
+    }
+
+    &--contacts,
+    &--attractions,
+    &--message {
+      padding-left: 50px;
+      padding-right: 50px;
+      background-color: $basic-white;
+    }
+
+    &--contacts {
+      margin-bottom: 20px;
+    }
+
+    &--attractions {
+      width: 308px;
+      margin-bottom: 58px;
+      padding-top: 16px;
+    }
+
+    &--message {
+      margin-bottom: 60px;
+    }
+  }
+
+  .fieldset__label {
+    &--contacts {
+      &:first-of-type {
+        margin-bottom: 25px;
+      }
+    }
+    &--radio:not(:last-of-type) {
+      margin-bottom: 52px;
+    }
+
+    &--checkbox {
+      display: inline-block;
+      margin-bottom: 62px;
+    }
+  }
+
+  .fieldset__input {
+    &--firstname {
+      width: 226px;
+    }
+
+    &--lastname {
+      width: 178px;
+    }
+
+    &--patronymic {
+      width: 180px;
+    }
+
+    &--phone,
+    &--email,
+    &--message {
+      width: 648px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fieldset {
+    &--introduction {
+      padding-bottom: 50px;
+    }
+
+    &--contacts {
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    &--attractions {
+      margin: auto;
+      padding: 0 0 5px;
+    }
+
+    &--message {
+      padding-bottom: 55px;
+    }
+  }
+
+  .fieldset__name {
+    &--contacts {
+      margin-bottom: 65px;
+    }
+  }
+
+  .fieldset__label {
+    &--contacts {
+      display: inline-block;
+
+      &:not(:last-of-type) {
+        margin-right: 80px;
+      }
+
+      & .fieldset__label-phone {
+        display: none;
+      }
+    }
+
+    &--checkbox {
+      margin-right: 43px;
+    }
+  }
+  .fieldset__input {
+    &--firstname {
+      width: 350px;
+    }
+
+    &--lastname {
+      width: 312px;
+    }
+
+    &--patronymic {
+      width: 314px;
+    }
+
+    &--phone,
+    &--email {
+      width: 315px;
+    }
+
+    &--message {
+      width: 960px;
+    }
   }
 }

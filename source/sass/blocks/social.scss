@@ -1,12 +1,5 @@
 .social {
-  margin-bottom: 45px;
-}
-
-.social__title {
-  @include bold-font-style;
-  margin-bottom: 33px;
-  text-decoration: none;
-  color: $basic-black;
+  margin-bottom: 34px;
 }
 
 .social__list {
@@ -50,19 +43,19 @@
   &--twitter::before {
     width: 18px;
     height: 15px;
-    background-image: url("../../img/icon-twitter.svg");
+    background-image: url("../img/icon-twitter.svg");
   }
 
   &--facebook::before {
     width: 9px;
     height: 19px;
-    background-image: url("../../img/icon-facebook.svg");
+    background-image: url("../img/icon-facebook.svg");
   }
 
   &--youtube::before {
     width: 20px;
     height: 14px;
-    background-image: url("../../img/icon-youtube.svg");
+    background-image: url("../img/icon-youtube.svg");
   }
 }
 
@@ -70,12 +63,6 @@
   .social {
     display: flex;
     margin: 0;
-    margin-right: 105px;
-  }
-
-  .social__title {
-    margin: 0;
-    margin-right: 97px;
   }
 }
 
@@ -83,11 +70,5 @@
   .social {
     display: flex;
     margin: 0;
-    margin-right: 261px;
-  }
-
-  .social__title {
-    margin: 0;
-    margin-right: 254px;
   }
 }

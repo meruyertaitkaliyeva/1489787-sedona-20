@@ -8,14 +8,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page__body">
+<body class="page__body page__body--photo">
 
   <div class="container">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
         <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седоны">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -35,18 +35,19 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main page-main--photo">
-      <header class="main-header">
-        <div class="main-header__logo">
-          <img class="main-header__icon" src="img/text-sedona.svg" width="282" height="214"
+    <main class="page-main">
+      <header class="main-header main-header--photo">
+        <div class="main-header__logo main-header__logo--photo">
+          <img class="main-header__icon main-header__icon--photo" src="img/text-sedona.svg" width="282" height="214"
             alt="Добро пожаловать в Седону">
         </div>
-        <h1 class="visually-hidden">Фото и видео</h1>
+        <div class="main-header__heading main-header__heading--photo">
+          <h1 class="main-header__title main-header__title--photo">Фото и видео</h1>
+          <p class="main-header__intro main-header__intro--photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
+            экономике.</p>
+        </div>
       </header>
       <section class="gallery">
-        <h2 class="gallery__title">Фото и видео</h2>
-        <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
-          экономике.</p>
         <ul class="gallery__list">
           <li class="gallery__item gallery__item--main card">
             <a class="card__link" href="#">
@@ -55,7 +56,7 @@
             </a>
             <div class="card__folder">
               <div class="card__description">
-                <h3 class="card__caption">Народные просторы</h3>
+                <h3 class="card__caption">Неродные просторы</h3>
                 <p class="card__author">Автор фото: Борис</p>
               </div>
               <p class="card__likes">1350</p>
@@ -102,33 +103,38 @@
         </ul>
       </section>
       <section class="video">
-        <h2 class="video__title">Все еще сомневаетесь?</h2>
-        <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <div class="video__heading">
+          <h2 class="video__title">Все еще сомневаетесь?</h2>
+          <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
         <video class="video__clip" src="https://via.placeholder.com/150x150"></video>
       </section>
     </main>
     <footer class="page-footer">
+      <p class="page-footer__intro">#VisitSedona</p>
       <div class="page-footer__social social">
-        <a class="social__title" href="#">#VisitSedona</a>
         <ul class="social__list">
-          <li class="social__item social__item--twitter"></li>
-          <li class="social__item social__item--facebook"></li>
-          <li class="social__item social__item--youtube"></li>
+          <li class="social__item social__item--twitter">
+            <a href="#"></a>
+          </li>
+          <li class="social__item social__item--facebook">
+            <a href="#"></a>
+          </li>
+          <li class="social__item social__item--youtube">
+            <a href="#"></a>
+          </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27" height="34"
-            aria-label="HTML Академия">
-            <path fill="#2E368F"
-              d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
-            </svg>
+          <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27" height="34" aria-label="HTML Академия"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
         </a>
       </div>
     </footer>
   </div>
 
+  <script src="js/menu.js"></script>
 </body>
 
 </html>
