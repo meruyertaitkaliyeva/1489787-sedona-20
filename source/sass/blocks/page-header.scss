@@ -3,9 +3,19 @@
   z-index: 2;
 }
 
-.page-header__logo {
+.page-header__logo img {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  width: 102px;
+  height: 84px;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo img {
+    width: 187px;
+    height: 96px;
+  }
+
 }
