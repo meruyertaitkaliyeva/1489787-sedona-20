@@ -1,7 +1,3 @@
-.card {
-  position: relative;
-}
-
 .card__pic {
   margin-bottom: 4px;
 }
@@ -27,19 +23,24 @@
 }
 
 .card__likes {
+  display: flex;
+  align-items: baseline;
+}
+
+.card__like {
+  display: inline-block;
+  width: 23px;
+  height: 21px;
+  opacity: 0.3;
+}
+
+.card__number {
   margin: 0;
+  padding-left: 14px;
   font-weight: 700;
 }
 
 @media (min-width: $tablet-width) {
-  @media (max-width: $tablet-width) {
-    .card {
-      &:nth-of-type(3) .card__folder {
-        background-color: #eaeaea;
-      }
-    }
-  }
-
   .card__folder {
     display: flex;
     justify-content: space-between;
@@ -48,13 +49,19 @@
     box-sizing: border-box;
   }
 
-  .card__link {
-    display: flex;
+  @media (max-width: $desktop-width) {
+    .card {
+      &:nth-of-type(3) .card__folder {
+        background-color: #eaeaea;
+      }
+    }
   }
 
   .card__pic {
+    display: block;
     width: 324px;
     height: 267px;
+    margin: 0;
     object-fit: cover;
 
     &--main {
@@ -69,6 +76,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .card {
+    position: relative;
+  }
+
   .card__folder {
     position: absolute;
     bottom: 0;
@@ -82,6 +93,13 @@
     width: 400px;
     &--main {
       width: 100%;
+    }
+  }
+
+  .card__like {
+    opacity: 1;
+    & path {
+      fill: $basic-white;
     }
   }
 }

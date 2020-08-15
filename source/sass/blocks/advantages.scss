@@ -7,6 +7,7 @@
 }
 
 .advantages__picture {
+  display: block;
   height: 260px;
 }
 
@@ -78,8 +79,8 @@
     margin-bottom: 20px;
   }
 
-  .advantages__picture--bridge {
-    order: -1;
+  .advantages__folder--bridge {
+    order: 2;
   }
 }
 

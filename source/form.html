@@ -11,7 +11,11 @@
     <div class="container">
       <header class="page-header">
         <a class="page-header__logo" href="index.html">
-          <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седоны">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седоны">
+          </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
@@ -87,7 +91,7 @@
           </fieldset>
           <fieldset class="page-form__fieldset page-form__fieldset--message fieldset fieldset--message">
             <legend class="fieldset__name fieldset__name--message">Опишите свои эмоции:</legend>
-            <textarea class="fieldset__input fieldset__input--message" name="message" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
+            <textarea class="fieldset__input fieldset__input--message" name="message" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="button page-form__submit" type="submit">Отправить отзыв</button>
           <p class="page-form__edit"><span class="page-form__edit-star">*</span> - Обязательные поля</p>
