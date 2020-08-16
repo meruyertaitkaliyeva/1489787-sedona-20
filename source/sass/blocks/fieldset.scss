@@ -27,6 +27,38 @@
   }
 }
 
+.fieldset__list {
+  @include list-style;
+
+  &--introduction {
+    display: flex;
+    flex-wrap: wrap;
+
+    & .fieldset__item {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      width: 100%;
+
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &--contacts .fieldset__item:not(:last-of-type) {
+    margin-bottom: 14px;
+  }
+
+  &--impression .fieldset__item:not(:last-of-type) {
+    margin-bottom: 43px;
+  }
+
+  &--attractions .fieldset__item:not(:last-of-type) {
+    margin-bottom: 54px;
+  }
+}
+
 .fieldset__name {
   padding-top: 20px;
   font-weight: 700;
@@ -37,7 +69,7 @@
     margin-bottom: 18px;
   }
 
-  &--attraction {
+  &--attractions {
     padding-top: 15px;
     margin-bottom: 17px;
   }
@@ -47,30 +79,15 @@
   font-size: 18px;
   color: $basic-dark;
 
-  &--introduction {
-    font-size: 14px;
-
-    &:not(:last-of-type) {
-      margin-bottom: 20px;
-    }
-  }
-
+  &--introduction,
   &--contacts {
     font-size: 14px;
-
-    &:not(:last-of-type) {
-      margin-bottom: 13px;
-    }
-    &:first-of-type {
-      margin-top: -3px;
-    }
   }
 
   &--radio,
   &--checkbox {
     position: relative;
     font-weight: 700;
-    font-size: 18px;
     text-transform: none;
     cursor: pointer;
 
@@ -87,10 +104,6 @@
   &--radio {
     padding-left: 76px;
 
-    &:not(:last-of-type) {
-      margin-bottom: 43px;
-    }
-
     &::before {
       left: 3px;
       width: 48px;
@@ -101,10 +114,6 @@
 
   &--checkbox {
     padding-left: 76px;
-
-    &:not(:last-of-type) {
-      margin-bottom: 54px;
-    }
 
     &::before {
       width: 46px;
@@ -132,18 +141,7 @@
   &--lastname,
   &--patronymic {
     margin-left: 8px;
-  }
-
-  &--firstname {
-    width: 230px;
-  }
-
-  &--lastname {
-    width: 192px;
-  }
-
-  &--patronymic {
-    width: 194px;
+    width: 100%;
   }
 
   &--phone,
@@ -215,6 +213,7 @@
 
     &--introduction {
       padding-bottom: 55px;
+      padding-left: 58px;
       text-align: right;
     }
 
@@ -223,13 +222,19 @@
     }
 
     &--attractions {
-      display: flex;
-      flex-wrap: wrap;
       padding: 0 100px 10px;
     }
 
     &--message {
       padding-bottom: 60px;
+    }
+  }
+
+  .fieldset__list {
+    &--attractions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 64px;
     }
   }
 
@@ -276,25 +281,6 @@
     &--radio:not(:last-of-type) {
       margin-bottom: 52px;
     }
-
-    &--checkbox {
-      display: inline-block;
-      margin-bottom: 62px;
-    }
-  }
-
-  .fieldset__input {
-    &--firstname {
-      width: 226px;
-    }
-
-    &--lastname {
-      width: 178px;
-    }
-
-    &--patronymic {
-      width: 180px;
-    }
   }
 }
 
@@ -302,6 +288,7 @@
   .fieldset {
     &--introduction {
       padding-bottom: 50px;
+      padding-left: 79px;
     }
 
     &--contacts {
@@ -310,13 +297,20 @@
     }
 
     &--attractions {
-      display: inline-block;
       margin: auto;
       padding: 0 0 5px;
     }
 
     &--message {
       padding-bottom: 55px;
+    }
+  }
+
+  .fieldset__list {
+    &--contacts,
+    &--attractions {
+      display: flex;
+      justify-content: space-between;
     }
   }
 
@@ -338,24 +332,9 @@
         display: none;
       }
     }
-
-    &--checkbox {
-      margin-right: 43px;
-    }
   }
+
   .fieldset__input {
-    &--firstname {
-      width: 350px;
-    }
-
-    &--lastname {
-      width: 312px;
-    }
-
-    &--patronymic {
-      width: 314px;
-    }
-
     &--phone,
     &--email {
       width: 315px;

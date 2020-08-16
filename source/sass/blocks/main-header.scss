@@ -1,4 +1,4 @@
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-breakpoint) {
   .main-header {
     position: relative;
     padding-bottom: 15px;
@@ -140,8 +140,6 @@
       background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
-
-
 
   .main-header__icon {
     width: 461px;

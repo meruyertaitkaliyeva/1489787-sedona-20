@@ -8,7 +8,7 @@
   padding: 25px 26px 24px 26px;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-breakpoint) {
   .advantages-packed__item br {
     display: none;
   }

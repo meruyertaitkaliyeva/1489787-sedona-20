@@ -6,7 +6,7 @@
   @include list-style;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-breakpoint) {
   .gallery {
     padding: 0 15px;
   }
