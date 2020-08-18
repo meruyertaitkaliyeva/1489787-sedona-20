@@ -1,4 +1,4 @@
-@media (max-width: $mobile-width) {
+@media (max-width: $mobile-breakpoint) {
   .main-header {
     position: relative;
     padding-bottom: 15px;
@@ -44,10 +44,15 @@
   &--form,
   &--photo {
     height: 158px;
+    background-position: bottom;
   }
 
   &--form {
     margin-bottom: 35px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 }
 
@@ -112,9 +117,7 @@
 
     &::after {
       bottom: -1px;
-      left: 50%;
       width: $tablet-width;
-      height: 57px;
       background-image: url("../img/bg-intro-triangle-tablet.svg");
     }
 
@@ -130,9 +133,15 @@
     &--form {
       margin-bottom: 70px;
     }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .main-header__icon {
+    width: 461px;
+    height: 350px;
     &--form,
     &--photo {
       width: 457px;
@@ -194,7 +203,6 @@
     &--form,
     &--photo {
       height: 300px;
-
     }
 
     &--photo {
@@ -203,6 +211,10 @@
 
     &--form {
       margin-bottom: 115px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
 

@@ -13,10 +13,13 @@ $special-dark-grey: #604E43;
 
 $body-font-family: "PT Sans", "Arial", sans-serif;
 
-$mobile-width: 520px;
+$mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
 
 $mobile-width-container: 540px;
 $tablet-width-container: 890px;
 $desktop-width-container: 1220px;
+
+$mobile-breakpoint: 767px;
+$tablet-breakpoint: 1199px;

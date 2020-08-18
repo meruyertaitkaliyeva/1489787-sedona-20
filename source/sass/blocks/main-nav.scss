@@ -1,7 +1,6 @@
 .main-nav {
   position: relative;
   width: auto;
-  min-height: 56px;
 }
 
 .main-nav__toggle {
@@ -11,6 +10,7 @@
   width: 23px;
   height: 22px;
   background-color: transparent;
+  outline: none;
 }
 
 .main-nav--closed .main-nav__toggle {
@@ -119,7 +119,7 @@
   box-sizing: border-box;
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $mobile-breakpoint) {
   .main-nav--closed .main-nav__item {
     display: none;
   }
