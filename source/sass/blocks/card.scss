@@ -31,6 +31,7 @@
   display: inline-block;
   width: 23px;
   height: 21px;
+  fill: $basic-black;
   opacity: 0.3;
 }
 
@@ -98,8 +99,6 @@
 
   .card__like {
     opacity: 1;
-    & path {
-      fill: $basic-white;
-    }
+    fill: $basic-white;
   }
 }
