@@ -14,8 +14,15 @@
   width: 40px;
   height: 40px;
   margin-top: 7px;
-}
+  fill: $basic-black;
 
-.copyright__logo path {
-  fill: #000000;
+  &:hover,
+  &:focus {
+    fill: $basic-light-blue;
+  }
+
+  &:active {
+    fill: $basic-black;
+    opacity: 0.3;
+  }
 }
