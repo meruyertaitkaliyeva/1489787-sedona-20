@@ -38,7 +38,7 @@
 
 @media (min-width: $tablet-width) {
   .gallery {
-    padding: 0 55px 25px;
+    padding: 0 55px;
   }
 
   .gallery__list {
@@ -55,7 +55,7 @@
 
 @media (min-width: $desktop-width) {
   .gallery {
-    padding: 0 0 55px;
+    padding: 0;
   }
 
   .gallery__list {

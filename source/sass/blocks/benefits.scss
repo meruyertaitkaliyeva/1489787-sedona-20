@@ -27,7 +27,7 @@
       left: 17px;
       width: 39px;
       height: 37px;
-      background-image: url("../img/icon-house.svg");
+      background-image: url("../img/house.svg");
     }
   }
 
@@ -37,7 +37,7 @@
       left: 20px;
       width: 32px;
       height: 38px;
-      background-image: url("../img/icon-gift.svg");
+      background-image: url("../img/gift.svg");
     }
   }
 
@@ -47,7 +47,7 @@
       left: 15px;
       width: 40px;
       height: 35px;
-      background-image: url("../img/icon-burger.svg");
+      background-image: url("../img/burger.svg");
     }
   }
 }
@@ -99,7 +99,6 @@
       &::before {
         width: 75px;
         height: 72px;
-        background-image: url("../img/icon-house.svg");
       }
     }
 
@@ -109,7 +108,6 @@
       &::before {
         width: 64px;
         height: 75px;
-        background-image: url("../img/icon-gift.svg");
       }
     }
 
@@ -117,7 +115,6 @@
       &::before {
         width: 76px;
         height: 68px;
-        background-image: url("../img/icon-burger.svg");
       }
     }
   }

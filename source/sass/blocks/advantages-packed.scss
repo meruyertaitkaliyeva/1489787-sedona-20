@@ -12,6 +12,7 @@
   .advantages-packed__item br {
     display: none;
   }
+
   .advantages-packed__item:not(:last-of-type)::after {
     content: "";
     position: absolute;

@@ -23,6 +23,7 @@
       margin-top: -6px;
     }
   }
+
   .advantages__item--unpacked {
     &:first-of-type .advantages__folder {
       padding: 70px 12px 39px 13px;
@@ -53,6 +54,7 @@
 
   .advantages__item {
     width: 768px;
+
     &--unpacked {
       display: flex;
     }
