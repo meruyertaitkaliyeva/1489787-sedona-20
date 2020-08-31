@@ -26,8 +26,8 @@ input[type="radio"].visually-hidden {
 
 .container {
   margin: 0 auto;
+  padding: 0;
   max-width: $mobile-width-container;
-  padding: 0 5px;
 }
 
 *::before,
@@ -43,6 +43,7 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $desktop-width) {
   .container {
-    max-width: $desktop-width-container;
+    max-width: $desktop-width;
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
   }
 }

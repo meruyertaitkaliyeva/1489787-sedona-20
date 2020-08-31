@@ -36,39 +36,39 @@ exports.styles = styles;
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
-      imagemin.mozjpeg({quality: 75, progressive: true}),
+      imagemin.optipng({ optimizationLevel: 3 }),
+      imagemin.mozjpeg({ quality: 75, progressive: true }),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("source/img"))
- }
+}
 
- exports.images = images;
+exports.images = images;
 
- // CreateWebp
+// CreateWebp
 
- const createWebp = () => {
+const createWebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({quality: 90}))
+    .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("source/img"))
- }
+}
 
- exports.webp = createWebp;
+exports.webp = createWebp;
 
- // svgSprite
+// svgSprite
 
- const sprite = () => {
+const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"))
- }
+}
 
- exports.sprite = sprite;
+exports.sprite = sprite;
 
- // Copy
+// Copy
 
- const copy = () => {
+const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
@@ -76,12 +76,12 @@ const images = () => {
   ], {
     base: "source"
   })
-  .pipe(gulp.dest("build"));
- };
+    .pipe(gulp.dest("build"));
+};
 
- exports.copy = copy;
+exports.copy = copy;
 
-  // Clean
+// Clean
 
 const clean = () => {
   return del("build");
@@ -89,26 +89,26 @@ const clean = () => {
 
 exports.clean = clean;
 
- // HTML
+// HTML
 
- const html = () => {
+const html = () => {
   return gulp.src("source/*.html")
     .pipe(gulp.dest("build"))
- }
+}
 
- exports.html = html;
+exports.html = html;
 
- // Build
+// Build
 
- const build = gulp.series(
+const build = gulp.series(
   clean,
   copy,
   styles,
   sprite,
   html
- );
+);
 
- exports.build = build;
+exports.build = build;
 
 // Server
 
