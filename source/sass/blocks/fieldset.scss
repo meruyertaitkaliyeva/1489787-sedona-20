@@ -171,11 +171,11 @@
 
   &--phone {
     margin-top: 10px;
-    background-image: url("../img/icon-phone.svg");
+    background-image: url("../img/phone.svg");
   }
 
   &--email {
-    background-image: url("../img/icon-mail.svg");
+    background-image: url("../img/mail.svg");
   }
 
   &--message {
@@ -188,7 +188,7 @@
 
 .fieldset__radio {
   &:checked + .fieldset__label--radio::before {
-    background-image: url("../img/icon-radio.svg");
+    background-image: url("../img/radio.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 18px 18px;
@@ -209,7 +209,7 @@
 
 .fieldset__checkbox {
   &:checked + .fieldset__label--checkbox::before {
-    background-image: url("../img/icon-tick.svg");
+    background-image: url("../img/tick.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 23px 16px;
@@ -300,6 +300,7 @@
         margin-bottom: 25px;
       }
     }
+
     &--radio:not(:last-of-type) {
       margin-bottom: 52px;
     }

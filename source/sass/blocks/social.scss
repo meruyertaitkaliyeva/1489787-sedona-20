@@ -35,6 +35,7 @@
 
   &:active {
     background-color: $basic-dark-blue;
+
     &::before {
       opacity: 0.3;
     }
@@ -43,19 +44,19 @@
   &--twitter::before {
     width: 18px;
     height: 15px;
-    background-image: url("../img/icon-twitter.svg");
+    background-image: url("../img/twitter.svg");
   }
 
   &--facebook::before {
     width: 9px;
     height: 19px;
-    background-image: url("../img/icon-facebook.svg");
+    background-image: url("../img/facebook.svg");
   }
 
   &--youtube::before {
     width: 20px;
     height: 14px;
-    background-image: url("../img/icon-youtube.svg");
+    background-image: url("../img/youtube.svg");
   }
 }
 
