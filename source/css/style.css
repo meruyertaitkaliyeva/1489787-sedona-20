@@ -372,13 +372,15 @@ th {
   font-family: "PT Sans";
   src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
   font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
   font-weight: 700;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 a {
   text-decoration: none; }
@@ -445,7 +447,10 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: #ffffff;
   background-color: #81b3d2;
-  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2); }
+  border: none;
+  text-transform: uppercase;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-sizing: border-box; }
   .button:hover, .button:focus {
     background-color: #669ec0; }
   .button:active {
@@ -1028,9 +1033,21 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
     margin-bottom: 55px; } }
 
+.map {
+  position: relative; }
+
 .map__image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 350px; }
+  height: 350px;
+  z-index: -1; }
+
+.map__google {
+  width: 100%;
+  height: 350px;
+  border: none; }
 
 @media (max-width: 767px) {
   .page-form__fieldset {
@@ -1685,5 +1702,41 @@ input[type="radio"].visually-hidden {
   .copyright__logo:active {
     fill: #000000;
     opacity: 0.3; }
+
+.popup {
+  display: none;
+  width: 320px;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  box-sizing: border-box; }
+  .popup--failure {
+    height: 280px;
+    padding: 40px 41px 35px; }
+  .popup--success {
+    height: 323px;
+    padding: 38px 37px 20px; }
+
+.popup__show {
+  display: block; }
+
+.popup__heading {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 30px; }
+
+.popup__text--failure {
+  margin-bottom: 22px; }
+
+.popup__text--success {
+  margin-bottom: 41px; }
+
+.popup__button {
+  padding: 18px 0 14px;
+  font-size: 18px; }
+  .popup__button--failure {
+    padding-left: 63px;
+    padding-right: 64px; }
+  .popup__button--success {
+    padding-left: 58px;
+    padding-right: 59px; }
 
 /*# sourceMappingURL=style.css.map */
