@@ -30,7 +30,7 @@
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фото и отзывы</a>
+            <a class="main-nav__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link  main-nav__link--active">Форма отзыва</a>
@@ -60,12 +60,12 @@
             <li class="fieldset__item">
               <label class="fieldset__label fieldset__label--introduction">Имя<span
                   class="fieldset__label-star">*</span>:</label>
-              <input class="fieldset__input fieldset__input--firstname" type="text" placeholder="Петр">
+              <input class="fieldset__input fieldset__input--firstname" type="text" placeholder="Петр" required>
             </li>
             <li class="fieldset__item">
               <label class="fieldset__label fieldset__label--introduction">Фамилия<span
                   class="fieldset__label-star">*</span>:</label>
-              <input class="fieldset__input fieldset__input--lastname" type="text" placeholder="Иванов">
+              <input class="fieldset__input fieldset__input--lastname" type="text" placeholder="Иванов" required>
             </li>
             <li class="fieldset__item">
               <label class="fieldset__label fieldset__label--introduction">Отчество:</label>
@@ -80,12 +80,12 @@
               <label class="fieldset__label fieldset__label--contacts"><span
                   class="fieldset__label-phone">Контактный</span>телефон<span
                   class="fieldset__label-star">*</span>:</label>
-              <input class="fieldset__input fieldset__input--phone" type="tel" placeholder="Введите телефон">
+              <input class="fieldset__input fieldset__input--phone" type="tel" placeholder="Введите телефон" required>
             </li>
             <li class="fieldset__item">
               <label class="fieldset__label fieldset__label--contacts">Электронная почта<span
                   class="fieldset__label-star">*</span>:</label>
-              <input class="fieldset__input fieldset__input--email" type="email" placeholder="Введите e-mail">
+              <input class="fieldset__input fieldset__input--email" type="email" placeholder="Введите e-mail" required>
             </li>
           </ul>
         </fieldset>
@@ -169,7 +169,8 @@
   </section>
   <section class="popup popup--success">
     <h2 class="popup__heading">Ваш отзыв был отправлен!</h2>
-    <p class="popup__text popup__text--success">Спасибо за участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте</p>
+    <p class="popup__text popup__text--success">Спасибо за участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+      опубликуем его на сайте</p>
     <button class="button popup__button popup__button--success">Закрыть окно</button>
   </section>
 

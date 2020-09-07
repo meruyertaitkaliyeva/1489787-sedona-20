@@ -1,7 +1,7 @@
 .popup {
   display: none;
   width: 320px;
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   box-sizing: border-box;
 
   &--failure {
@@ -48,4 +48,3 @@
     padding-right: 59px;
   }
 }
-

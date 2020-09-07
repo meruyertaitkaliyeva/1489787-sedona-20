@@ -1,7 +1,6 @@
 .benefits {
   @include list-style;
-  padding-top: 25px;
-  padding-bottom: 12px;
+  padding: 34px 0 12px 5px;
   color: $basic-black;
   background-color: $basic-white;
 }
@@ -80,8 +79,6 @@
     position: relative;
     width: 100%;
     padding-top: 100px;
-    padding-left: 30px;
-    padding-right: 30px;
     text-align: center;
     box-sizing: border-box;
 
@@ -96,6 +93,8 @@
     }
 
     &--house {
+      padding-left: 40px;
+      padding-right: 45px;
       &::before {
         width: 75px;
         height: 72px;
@@ -103,6 +102,8 @@
     }
 
     &--souvenirs {
+      padding-left: 30px;
+      padding-right: 30px;
       order: 2;
 
       &::before {
@@ -112,6 +113,8 @@
     }
 
     &--food {
+      padding-left: 47px;
+      padding-right: 50px;
       &::before {
         width: 76px;
         height: 68px;
@@ -121,16 +124,38 @@
 
   .benefits__title {
     margin-bottom: 22px;
+    font-size: 21px;
+  }
+}
+
+@media (max-width: $tablet-breakpoint) {
+  br {
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .benefits {
-    padding-bottom: 60px;
+    padding-bottom: 58px;
   }
 
   .benefits__item {
     padding-left: 50px;
     padding-right: 50px;
+
+    &--house {
+      padding-left: 50px;
+      padding-right: 60px;
+    }
+
+    &--souvenirs {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    &--food {
+      padding-left: 55px;
+      padding-right: 57px;
+    }
   }
 }

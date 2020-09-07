@@ -1,5 +1,6 @@
 .video {
-  padding-top: 32px;
+  padding-top: 35px;
+  margin-bottom: -5px;
 }
 
 .video__heading {
@@ -51,10 +52,10 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: 56px;
+    left: 36px;
     transform: translateY(-50%);
-    width: 13px;
-    height: 13px;
+    width: 9px;
+    height: 9px;
     border-radius: 50%;
     background-color: $basic-white;
     opacity: 1;
@@ -69,11 +70,15 @@
   outline: none;
 
   &--replay {
-    margin-right: 133px;
+    margin-right: 125px;
   }
 
   &--subtitles {
-    margin-right: 31px;
+    margin-right: 24px;
+  }
+
+  &--fullscreen {
+    margin-left: 4px;
   }
 }
 
@@ -108,7 +113,7 @@
 @media (min-width: $tablet-width) {
   .video {
     padding-top: 59px;
-    margin-bottom: -62px;
+    margin-bottom: -54px;
   }
 
   .video__heading {
@@ -117,12 +122,12 @@
   }
 
   .video__title {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
     font-size: 30px;
   }
 
   .video__intro {
-    margin-bottom: 68px;
+    margin-bottom: 80px;
   }
 
   .video__clip {
@@ -140,7 +145,7 @@
     transform: translateX(-50%);
     width: 648px;
     height: 93px;
-    padding: 0 35px;
+    padding: 34px 35px 30px;
     background-color: rgba($basic-black, 0.6%);
     box-sizing: border-box;
   }
@@ -153,6 +158,10 @@
     margin: 0;
     margin-right: 42px;
     order: 2;
+
+    &::after {
+      left: 112px;
+    }
   }
 
   .video__button {
@@ -189,10 +198,15 @@
 @media (min-width: $desktop-width) {
   .video {
     padding-top: 63px;
+    margin-bottom: -10px;
+  }
+
+  .video__title {
+    margin-bottom: 32px;
   }
 
   .video__intro {
-    margin-bottom: 66px;
+    margin-bottom: 78px;
   }
 
   .video__clip {

@@ -18,10 +18,8 @@
 }
 
 @media (max-width: $mobile-breakpoint) {
-  .advantages__item {
-    &:last-of-type {
-      margin-top: -6px;
-    }
+  br {
+    display: none;
   }
 
   .advantages__item--unpacked {
@@ -44,7 +42,7 @@
 
 .advantages__description {
   margin: 0;
-  line-height: 22px;
+  line-height: 21px;
 }
 
 @media (min-width: $tablet-width) {
@@ -70,6 +68,10 @@
     width: 256px;
     min-height: 256px;
     padding: 41px 32px;
+
+    &--bridge {
+      padding-top: 43px;
+    }
   }
 
   .advantages__title {
@@ -98,12 +100,24 @@
   .advantages__folder {
     width: 400px;
     min-height: 256px;
-    padding: 47px 52px 57px 53px;
+    padding: 48px 59px 57px;
+
+    & br {
+      display: none;
+    }
+
+    &--bridge {
+      padding: 50px 85px 55px;
+    }
   }
 
   .advantages__title {
     width: 150px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .advantages__number {
+    margin-bottom: 21px;
   }
 }

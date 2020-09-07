@@ -1,19 +1,4 @@
 @media (max-width: $mobile-breakpoint) {
-  .page-form__fieldset {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 320px;
-      height: 1px;
-      background-color: $basic-light-grey;
-    }
-  }
-
   .page-form__edit {
     display: none;
   }
@@ -30,7 +15,7 @@
   .page-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 60px 10px;
+    padding: 0 60px 20px;
   }
 
   .page-form__fieldset {
@@ -43,39 +28,17 @@
 
     &--impression {
       order: -1;
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-        width: 1px;
-        height: 292px;
-        background-color: #dbdbdb;
-      }
     }
 
     &--contacts,
     &--attractions,
     &--message {
       grid-column: 1 / -1;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 32px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 648px;
-        height: 1px;
-        background-color: #dbdbdb;
-        z-index: -1;
-      }
     }
   }
 
   .page-form__edit {
+    margin-top: 17px;
     margin-left: auto;
     font-size: 14px;
   }
@@ -83,16 +46,6 @@
 
 @media (min-width: $desktop-width) {
   .page-form {
-    padding: 0 120px 20px;
-  }
-
-  .page-form__fieldset {
-    &--contacts,
-    &--attractions,
-    &--message {
-      &::before {
-        width: 960px;
-      }
-    }
+    padding: 0 120px 30px;
   }
 }
