@@ -7,7 +7,7 @@
 }
 
 .card__description {
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .card__caption {
@@ -45,9 +45,25 @@
   .card__folder {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px 5px;
+    padding: 15px 20px;
     background-color: $basic-light;
     box-sizing: border-box;
+
+    &:nth-of-type(2) {
+      padding-right: 28px;
+    }
+
+    &:nth-of-type(3) {
+      padding-right: 35px;
+    }
+
+    &:nth-of-type(4) {
+      padding-right: 29px;
+    }
+  }
+
+  .card__number {
+    padding-left: 9px;
   }
 
   @media (max-width: $tablet-breakpoint) {
@@ -71,6 +87,10 @@
     }
   }
 
+  .card__description {
+    margin: 0;
+  }
+
   .card__likes {
     align-self: center;
   }
@@ -88,6 +108,18 @@
     width: 100%;
     color: $basic-white;
     background-color: rgba($basic-black, 0.3%);
+
+    &:nth-of-type(2) {
+      padding-right: 29px;
+    }
+
+    &:nth-of-type(3) {
+      padding-right: 37px;
+    }
+
+    &:nth-of-type(4) {
+      padding-right: 29px;
+    }
   }
 
   .card__pic {

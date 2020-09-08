@@ -1,3 +1,9 @@
+@media (max-width: $mobile-breakpoint) {
+  br {
+    display: none;
+  }
+}
+
 .hotel-reservation {
   padding: 33px 15px 63px;
   box-sizing: border-box;
@@ -11,7 +17,8 @@
 
 .hotel-reservation__text {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
+  line-height: 25px;
 }
 
 .hotel-reservation__button {
@@ -21,7 +28,7 @@
 @media (min-width: $tablet-width) {
   .hotel-reservation {
     padding-top: 58px;
-    padding-bottom: 65px;
+    padding-bottom: 72px;
   }
 
   .hotel-reservation__title {
@@ -32,23 +39,27 @@
   .hotel-reservation__text {
     width: 435px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 53px;
   }
 
   .hotel-reservation__button {
-    padding: 15px 132px;
+    padding: 15px 135px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .hotel-reservation {
     padding-top: 55px;
-    padding-bottom: 74px;
+    padding-bottom: 78px;
+  }
+
+  .hotel-reservation__title {
+    margin-bottom: 32px;
   }
 
   .hotel-reservation__text {
     width: 435px;
     margin: 0 auto;
-    margin-bottom: 55px;
+    margin-bottom: 60px;
   }
 }
