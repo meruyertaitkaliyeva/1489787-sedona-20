@@ -317,6 +317,10 @@
       margin-bottom: 21px;
       padding-top: 18px;
 
+      &::before {
+        top: 28px;
+      }
+
       &::after {
         content: "";
         position: absolute;
@@ -345,12 +349,6 @@
         height: 1px;
         background-color: #dbdbdb;
         z-index: -1;
-      }
-    }
-
-    &--contacts {
-      &::before {
-        top: 28px;
       }
     }
 
@@ -443,6 +441,10 @@
   }
 
   .fieldset__name {
+    &--impression {
+      margin-left: 80px;
+    }
+
     &--contacts {
       margin-bottom: 65px;
     }

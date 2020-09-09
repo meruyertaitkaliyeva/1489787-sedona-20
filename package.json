@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "del": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
     "node.normalize.scss": "^3.0.3"
   }
 }
