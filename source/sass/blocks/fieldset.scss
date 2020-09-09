@@ -441,6 +441,10 @@
   }
 
   .fieldset__name {
+    &--impression {
+      margin-left: 80px;
+    }
+
     &--contacts {
       margin-bottom: 65px;
     }
