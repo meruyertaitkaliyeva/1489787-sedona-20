@@ -71,6 +71,7 @@
 
     &--bridge {
       padding-top: 43px;
+      order: 2;
     }
   }
 
@@ -81,10 +82,6 @@
 
   .advantages__number {
     margin-bottom: 20px;
-  }
-
-  .advantages__folder--bridge {
-    order: 2;
   }
 }
 
